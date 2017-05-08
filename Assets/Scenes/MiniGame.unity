@@ -420,6 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &239087108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -536,7 +537,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 512909391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: 6.29, z: 0}
+  m_LocalPosition: {x: 0, y: 7, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_Children:
   - {fileID: 1197384144}
@@ -558,6 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &528229454
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &528229457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -778,6 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &790353589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -889,7 +893,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 12.715877
   m_Depth: -1
   m_CullingMask:
@@ -913,8 +917,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128698223}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42, y: 12.02, z: -25.63}
-  m_LocalScale: {x: 2.5271907, y: 2.387499, z: 2.124999}
+  m_LocalPosition: {x: 0, y: 12, z: -25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1262,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &1683928734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &1708894779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1849,6 +1855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &1757758206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2226,6 +2233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1 &1979836971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7d16d3d22d24ec8afdd4b919bc2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!23 &1979836974
 MeshRenderer:
   m_ObjectHideFlags: 0
