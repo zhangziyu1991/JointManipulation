@@ -44,7 +44,7 @@ public class Rotate : MonoBehaviour {
 
 			Vector3	target2	= p - transform.parent.position;
 
-			Debug.Log (p);
+			//Debug.Log (p);
 
 
 
