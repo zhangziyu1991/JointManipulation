@@ -19,7 +19,6 @@ public class Rotate : MonoBehaviour {
 	}
 
 	void Update() {
-
 		if(_isRotating) {
 			// offset
 			//			_mouseOffset = (Input.mousePosition - _mouseReference);
@@ -73,15 +72,10 @@ public class Rotate : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		// rotating flag
 		_isRotating = true;
-
-		// store mouse
-		//		_mouseReference = Input.mousePosition;
 	}
 
 	void OnMouseUp() {
-		// rotating flag
 		_isRotating = false;
 	}
 }

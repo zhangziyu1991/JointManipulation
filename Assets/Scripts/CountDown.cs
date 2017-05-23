@@ -12,7 +12,7 @@ public class CountDown : MonoBehaviour {
     // Use this for initialization
     void Start () {
         timer = GameObject.Find("Timer").GetComponent<Text>();
-        timer.text = "TIME: " + timeRemaining.ToString() + " S";
+        timer.text = "TIMER: " + timeRemaining.ToString() + " S";
 		
 	}
 
@@ -24,7 +24,7 @@ public class CountDown : MonoBehaviour {
         //Debug.Log(timeRemaining);
         if ((int)timeRemaining > 0)
         {
-            timer.text = "TIME: " + (int)timeRemaining + " S";
+            timer.text = "TIMER: " + (int)timeRemaining + " S";
         }
         else {
             timer.text = "TIME'S UP!";
