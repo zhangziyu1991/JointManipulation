@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44970703, g: 0.4997756, b: 0.5756324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44970727, g: 0.4997756, b: 0.5756324, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -981,9 +981,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdc27561c07e544eaa2a955e22ad12f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 910650481}
   speed: 2
   start: {fileID: 487912260}
+  target: {fileID: 910650481}
 --- !u!54 &487912262
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2586,13 +2586,40 @@ GameObject:
   - component: {fileID: 1285801982}
   - component: {fileID: 1285801981}
   - component: {fileID: 1285801980}
+  - component: {fileID: 1285801978}
+  - component: {fileID: 1285801979}
   m_Layer: 0
   m_Name: Wall 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &1285801978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285801977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdc27561c07e544eaa2a955e22ad12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  start: {fileID: 1285801984}
+  target: {fileID: 2099130772}
+--- !u!114 &1285801979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285801977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ff691af661c4cea9ef30ecc8697e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1285801980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3569,9 +3596,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdc27561c07e544eaa2a955e22ad12f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2099130772}
-  speed: 0
+  speed: 2
   start: {fileID: 1747855112}
+  target: {fileID: 2099130772}
 --- !u!54 &1747855117
 Rigidbody:
   m_ObjectHideFlags: 0
