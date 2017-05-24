@@ -400,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 183945406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 187742713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 278399785}
   - component: {fileID: 278399784}
   - component: {fileID: 278399783}
+  - component: {fileID: 278399786}
   m_Layer: 0
   m_Name: LeftTop
   m_TagString: Wall
@@ -595,6 +596,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 278399781}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &278399786
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278399781}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &309204482
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +622,7 @@ GameObject:
   - component: {fileID: 309204486}
   - component: {fileID: 309204485}
   - component: {fileID: 309204484}
+  - component: {fileID: 309204487}
   m_Layer: 0
   m_Name: LeftBottom
   m_TagString: Wall
@@ -677,6 +694,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309204482}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &309204487
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309204482}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &351257131
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +717,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 351257132}
-  - component: {fileID: 351257133}
   m_Layer: 0
   m_Name: Dummy
   m_TagString: Untagged
@@ -712,18 +743,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &351257133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 351257131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 706284495}
 --- !u!1 &388988287
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +784,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 388988287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -959,7 +978,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 484697107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -1055,7 +1074,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 487597081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -1218,8 +1237,8 @@ GameObject:
   - component: {fileID: 512909395}
   - component: {fileID: 512909394}
   - component: {fileID: 512909392}
-  - component: {fileID: 512909393}
   - component: {fileID: 512909396}
+  - component: {fileID: 512909393}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -1267,7 +1286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 512909391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -1314,6 +1333,7 @@ GameObject:
   - component: {fileID: 686260397}
   - component: {fileID: 686260396}
   - component: {fileID: 686260395}
+  - component: {fileID: 686260398}
   m_Layer: 0
   m_Name: Bottom
   m_TagString: Wall
@@ -1385,6 +1405,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686260393}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &686260398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 686260393}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &706284493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1505,7 @@ GameObject:
   - component: {fileID: 708091328}
   - component: {fileID: 708091327}
   - component: {fileID: 708091326}
+  - component: {fileID: 708091329}
   m_Layer: 0
   m_Name: LeftMiddle
   m_TagString: Wall
@@ -1541,6 +1577,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708091324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &708091329
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708091324}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &719616695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,6 +1603,7 @@ GameObject:
   - component: {fileID: 719616699}
   - component: {fileID: 719616698}
   - component: {fileID: 719616697}
+  - component: {fileID: 719616700}
   m_Layer: 0
   m_Name: LeftBottom
   m_TagString: Wall
@@ -1623,6 +1675,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719616695}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &719616700
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719616695}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &781345962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1701,7 @@ GameObject:
   - component: {fileID: 781345966}
   - component: {fileID: 781345965}
   - component: {fileID: 781345964}
+  - component: {fileID: 781345967}
   m_Layer: 0
   m_Name: RightTop
   m_TagString: Wall
@@ -1705,6 +1773,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781345962}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &781345967
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781345962}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &790353586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1893,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 790353586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -1855,7 +1938,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 794542966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -1934,6 +2017,7 @@ GameObject:
   - component: {fileID: 833126037}
   - component: {fileID: 833126036}
   - component: {fileID: 833126035}
+  - component: {fileID: 833126038}
   m_Layer: 0
   m_Name: LeftTop
   m_TagString: Wall
@@ -2005,6 +2089,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833126033}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &833126038
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833126033}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &931147382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,6 +2308,7 @@ GameObject:
   - component: {fileID: 979071709}
   - component: {fileID: 979071708}
   - component: {fileID: 979071707}
+  - component: {fileID: 979071710}
   m_Layer: 0
   m_Name: RightBottom
   m_TagString: Wall
@@ -2280,6 +2380,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979071705}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &979071710
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979071705}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1015519973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2406,7 @@ GameObject:
   - component: {fileID: 1015519977}
   - component: {fileID: 1015519976}
   - component: {fileID: 1015519975}
+  - component: {fileID: 1015519978}
   m_Layer: 0
   m_Name: RightBottom
   m_TagString: Wall
@@ -2362,6 +2478,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015519973}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1015519978
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015519973}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1026530737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,7 +2878,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162044349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -2792,7 +2923,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180781533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -2987,7 +3118,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258554079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -3096,7 +3227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425088787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -3192,7 +3323,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1474772955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -3301,7 +3432,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1503699505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -3367,6 +3498,7 @@ GameObject:
   - component: {fileID: 1524016467}
   - component: {fileID: 1524016466}
   - component: {fileID: 1524016465}
+  - component: {fileID: 1524016468}
   m_Layer: 0
   m_Name: RightTop
   m_TagString: Wall
@@ -3438,6 +3570,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524016463}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1524016468
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524016463}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1547486538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3449,6 +3596,7 @@ GameObject:
   - component: {fileID: 1547486542}
   - component: {fileID: 1547486541}
   - component: {fileID: 1547486540}
+  - component: {fileID: 1547486543}
   m_Layer: 0
   m_Name: RightMiddle
   m_TagString: Wall
@@ -3520,30 +3668,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1547486538}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1589332278
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1589332282}
-  - component: {fileID: 1589332281}
-  - component: {fileID: 1589332280}
-  - component: {fileID: 1589332279}
-  m_Layer: 0
-  m_Name: Wall 02
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1589332279
+--- !u!54 &1547486543
 Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589332278}
+  m_GameObject: {fileID: 1547486538}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -3553,17 +3683,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1589332280
-MonoBehaviour:
+--- !u!1 &1589332278
+GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1589332278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03ff691af661c4cea9ef30ecc8697e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1589332282}
+  - component: {fileID: 1589332281}
+  m_Layer: 0
+  m_Name: Wall 02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1589332281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3776,7 +3911,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1688920713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -3984,7 +4119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1708894776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -4030,7 +4165,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1756501296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
@@ -4323,6 +4458,7 @@ GameObject:
   - component: {fileID: 1942123312}
   - component: {fileID: 1942123311}
   - component: {fileID: 1942123310}
+  - component: {fileID: 1942123313}
   m_Layer: 0
   m_Name: LeftMiddle
   m_TagString: Wall
@@ -4394,30 +4530,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1942123308}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2046177503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2046177507}
-  - component: {fileID: 2046177506}
-  - component: {fileID: 2046177505}
-  - component: {fileID: 2046177504}
-  m_Layer: 0
-  m_Name: Wall 03
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &2046177504
+--- !u!54 &1942123313
 Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2046177503}
+  m_GameObject: {fileID: 1942123308}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -4427,17 +4545,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2046177505
-MonoBehaviour:
+--- !u!1 &2046177503
+GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2046177503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03ff691af661c4cea9ef30ecc8697e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2046177507}
+  - component: {fileID: 2046177506}
+  m_Layer: 0
+  m_Name: Wall 03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &2046177506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4483,6 +4606,7 @@ GameObject:
   - component: {fileID: 2088225794}
   - component: {fileID: 2088225793}
   - component: {fileID: 2088225792}
+  - component: {fileID: 2088225795}
   m_Layer: 0
   m_Name: RightMiddle
   m_TagString: Wall
@@ -4554,6 +4678,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088225790}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2088225795
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088225790}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2099130771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4624,7 +4763,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133820086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581dd2fc1980140f5b9617ccf4ad671d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b9fe4200311142b5bc68b4e59a9c7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 706284495}
