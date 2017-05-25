@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Wall
   - Coin
+  - Golden Coin
+  - Wall Component
+  - Wall Component Invincible Mode
+  - Wall Wrapper
   layers:
   - Default
   - TransparentFX
