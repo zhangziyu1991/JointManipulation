@@ -11,7 +11,7 @@ GUI.skin.button.font = MainMenuFont;
 GUI.skin.box.fontSize = 40;
 GUI.skin.button.fontSize = 40;
 
-	if(true){
+	if (true) {
 		
 		//Make a background box
 		GUI.Box(Rect(Screen.width/2 - 250,Screen.height/2 - 80,500,400), "Main Menu");
