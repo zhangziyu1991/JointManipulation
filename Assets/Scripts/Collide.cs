@@ -25,6 +25,7 @@ public class Collide : MonoBehaviour {
 			string[] tokens = scoreText.text.Split ('：');
 			Int32.TryParse (tokens [1], out _currScore);	
 			scoreText.text = "SCORE： " + (_currScore + 5);
+			Destroy (col.gameObject);
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
@@ -41,6 +42,7 @@ public class Collide : MonoBehaviour {
 					}
 				}
 			}
+			Destroy (col.gameObject);
 		}
 	}
 
