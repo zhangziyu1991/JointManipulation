@@ -29,10 +29,8 @@ public class Collide : MonoBehaviour {
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
-			Debug.Log ("This many walls: " + walls.Length);
 			foreach (GameObject wall in walls) {
-				Debug.Log ("lalalalal" + wall);
-				wall.GetComponent<Translate>().speed = 30;
+				wall.GetComponent<Translate>().speed = 50;
 			}
 			walls = GameObject.FindGameObjectsWithTag("Wall");
 			foreach (GameObject wall in walls) {
@@ -42,7 +40,29 @@ public class Collide : MonoBehaviour {
 					}
 				}
 			}
+
 			Destroy (col.gameObject);
+
+			// wait 5 seconds and then everything goes back to normal
+			StartCoroutine (WaitAndRevert());
+		}
+	}
+
+	IEnumerator WaitAndRevert() {
+		yield return new WaitForSecondsRealtime (5.0f);
+
+		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
+		foreach (GameObject wall in walls) {
+			wall.GetComponent<Translate>().speed = 3;
+		}
+
+		walls = GameObject.FindGameObjectsWithTag("Wall");
+		foreach (GameObject wall in walls) {
+			foreach (Transform child in wall.transform) {
+				if (child.tag == "Wall Component Invincible Mode") {
+					child.tag = "Wall Component";
+				}
+			}
 		}
 	}
 

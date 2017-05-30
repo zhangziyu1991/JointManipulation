@@ -29,23 +29,23 @@ public class Rotate : MonoBehaviour {
 
 			//			Vector3 current = new Vector3 (transform.position.x - transform.parent.position.x, transform.position.y - transform.parent.position.y);
 
-			Vector3 p = new Vector3();
-			Camera  c = Camera.main;
-			Vector2 mousePos = new Vector2();
+			Vector3 worldPosition = new Vector3();
+			Camera  camera = Camera.main;
+			Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+//			Debug.Log ("mouse x: " + mousePos.x);
+//			Debug.Log ("mouse y: " + mousePos.y);
 
-			mousePos.x = Input.mousePosition.x;
-			mousePos.y = Input.mousePosition.y;
-
-			p = c.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 50));
+			worldPosition = camera.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 0.0f - camera.transform.position.z));
 
 
 			//			Vector3 target = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x , Input.mousePosition.y, 0));
 
-			Vector3	target2	= p - transform.parent.position;
+			
+			Vector3	target2	= worldPosition - transform.parent.position;
+
+			Debug.Log ("p: " + worldPosition + "parent: " + transform.parent.position + ", " + target2);
 
 			//Debug.Log (p);
-
-
 
 
 			//			float step = speed * Time.deltaTime;
@@ -62,7 +62,7 @@ public class Rotate : MonoBehaviour {
 
 			//			transform.rotation = Quaternion.LookRotation (newDir);
 
-			transform.parent.LookAt (p, new Vector3(0, 0, -1));
+			transform.parent.LookAt (worldPosition, new Vector3(0, 0, -1));
 
 			// store mouse
 			//				_mouseReference = Input.mousePosition;
