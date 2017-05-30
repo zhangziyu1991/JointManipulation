@@ -10,7 +10,7 @@ public class Rotate : MonoBehaviour {
 			Vector3 parentScreenPosition = Camera.main.WorldToScreenPoint(transform.parent.position);
 			Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 			Vector3 target = new Vector3 (screenPosition.x - parentScreenPosition.x,
-										  screenPosition.y - parentScreenPosition.y, 0.0f);
+										  screenPosition.y - parentScreenPosition.y, 0);
 			transform.parent.rotation = Quaternion.LookRotation(new Vector3(0, 0, 1), target);
 		}
 	}
