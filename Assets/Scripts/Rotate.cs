@@ -14,15 +14,22 @@ public class Rotate : MonoBehaviour {
 		Vector3 target = new Vector3 (screenPosition.x - parentScreenPosition.x, screenPosition.y - parentScreenPosition.y, 0);
 		transform.parent.rotation = Quaternion.LookRotation(new Vector3(0, 0, 1), target);
 
-		var rotatedVector = Quaternion.Euler (0, 0, midRotation) * Vector3.up;	// local
-		var rotatedVector2 = transform.parent.localRotation * Vector3.up;		// local
-		float angle = Vector3.Angle(rotatedVector, rotatedVector2);
+		var vectorFrom = Quaternion.Euler (0, 0, midRotation) * Vector3.up;	// local
+		var vectorTo = transform.parent.localRotation * Vector3.up;		// local
+		float angle = Vector3.Angle(vectorFrom, vectorTo);
+		var cross = Vector3.Cross(vectorFrom, vectorTo);
 
-		if (angle > deltaRotation) {
-			transform.parent.localRotation = Quaternion.Euler (0, 0, midRotation + deltaRotation);
+		if (cross.z < 0) {
+			angle *= -1;
 		}
 
-		Debug.Log (rotatedVector + ", " + rotatedVector2 + ", " + angle);
+		if (angle > Mathf.Abs(deltaRotation)) {
+			transform.parent.localRotation = Quaternion.Euler (0, 0, midRotation + deltaRotation);
+		} else if (angle < -Mathf.Abs(deltaRotation)) {
+			transform.parent.localRotation = Quaternion.Euler (0, 0, midRotation - deltaRotation);
+		}
+
+		Debug.Log (vectorFrom + ", " + vectorTo + ", " + angle);
 
 //		Vector3 fromVector = new Vector3(0, 0, midRotation)
 //		if (midRotation, )
