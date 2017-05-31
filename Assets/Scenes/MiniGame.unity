@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   midRotation: 90
-  deltaRotation: 0
+  deltaRotation: 45
 --- !u!23 &1708894779
 MeshRenderer:
   m_ObjectHideFlags: 0
