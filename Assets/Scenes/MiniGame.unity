@@ -1690,7 +1690,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026530737}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 40fa5696077438a49bbce1aac01eba84, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
 --- !u!1 &1044895687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1943,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128698223}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 40fa5696077438a49bbce1aac01eba84, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
 --- !u!1 &1162044349
 GameObject:
   m_ObjectHideFlags: 0
