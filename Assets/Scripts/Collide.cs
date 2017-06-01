@@ -20,6 +20,15 @@ public class Collide : MonoBehaviour {
 	 "Wall 10", "Wall 11", "Wall 12", "Wall 13", "Wall 14", "Wall 15", "Wall 16", "Wall 17", "Wall 18", "Wall 19", "Wall 20", "Wall 21", "Wall 22",
 	 "Wall 23", "Wall 24", "Wall 25", "Wall 26", "Wall 27", "Wall 28", "Wall 29", "Wall 30"};
 
+	 //public AudioClip otherClip;
+    AudioSource bgm;
+    AudioSource collide;
+
+    void Start(){
+    	 bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+    	 collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
+    	}
+
 	void OnCollisionEnter(Collision col) {
 		
 		// Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " col.gameObject.tag);
@@ -41,6 +50,12 @@ public class Collide : MonoBehaviour {
 			//Debug.Log(col.gameObject.transform.parent.name);
 
 			gameOver = true;
+			if(bgm.isPlaying){
+				bgm.Stop();
+				collide.Play();
+
+			}
+			//audio.Stop();
 		
 		} else if (col.gameObject.tag == "Coin") {
 			string[] tokens = scoreText.text.Split ('：');

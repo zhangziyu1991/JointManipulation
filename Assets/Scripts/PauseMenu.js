@@ -69,6 +69,7 @@ GUI.skin.box.fontSize = 30;
 GUI.skin.button.fontSize = 30;
 
 	if(pauseEnabled == true){
+		//audio.Stop();
 		
 		//Make a background box
 		GUI.Box(Rect(Screen.width /2 - 120,Screen.height /2 - 100,250,280), "Pause Menu");
