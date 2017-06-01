@@ -138,7 +138,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1788598864940954, guid: d9e95c602d10c4c76b1331175e14af11, type: 2}
+  wall: {fileID: 1698579278203360, guid: ef56c5444eba9472bb1afe085255dbca, type: 2}
 --- !u!4 &91539205
 Transform:
   m_ObjectHideFlags: 0
@@ -919,7 +919,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1869426833312912, guid: fe38bb37e66384443ac1f70ca39bc5ea, type: 2}
+  wall: {fileID: 1742580144906126, guid: 6b25c1684f1b242adb28917a1121bc8c, type: 2}
 --- !u!4 &557321889
 Transform:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1698579278203360, guid: ef56c5444eba9472bb1afe085255dbca, type: 2}
+  wall: {fileID: 1526111408920020, guid: fe8f66c29ed1245e496b4704a8e095a6, type: 2}
 --- !u!4 &787653050
 Transform:
   m_ObjectHideFlags: 0
@@ -1441,7 +1441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011501826600, guid: b34bf25cecb5fc24c91de3edea19cb13, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000011501826600, guid: b34bf25cecb5fc24c91de3edea19cb13, type: 2}
       propertyPath: m_Name
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1729814565817784, guid: ec8f6befa3616428f96150a7d18f55f3, type: 2}
+  wall: {fileID: 1788598864940954, guid: d9e95c602d10c4c76b1331175e14af11, type: 2}
 --- !u!4 &1044895689
 Transform:
   m_ObjectHideFlags: 0
@@ -2169,7 +2169,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1526111408920020, guid: fe8f66c29ed1245e496b4704a8e095a6, type: 2}
+  wall: {fileID: 1729814565817784, guid: ec8f6befa3616428f96150a7d18f55f3, type: 2}
 --- !u!4 &1210623281
 Transform:
   m_ObjectHideFlags: 0
@@ -2326,7 +2326,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1742580144906126, guid: 6b25c1684f1b242adb28917a1121bc8c, type: 2}
+  wall: {fileID: 1645560948716256, guid: 6bfc177dc9b894fd5872071da779a42e, type: 2}
 --- !u!4 &1302908032
 Transform:
   m_ObjectHideFlags: 0
@@ -2468,7 +2468,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1645560948716256, guid: 6bfc177dc9b894fd5872071da779a42e, type: 2}
+  wall: {fileID: 1749065427137488, guid: 00fa844cc142c406a810f4943fc5d817, type: 2}
 --- !u!4 &1445920910
 Transform:
   m_ObjectHideFlags: 0
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   speed: 3
   source: {fileID: 633540886}
   sink: {fileID: 2099130772}
-  wall: {fileID: 1749065427137488, guid: 00fa844cc142c406a810f4943fc5d817, type: 2}
+  wall: {fileID: 1869426833312912, guid: fe38bb37e66384443ac1f70ca39bc5ea, type: 2}
 --- !u!4 &1651305779
 Transform:
   m_ObjectHideFlags: 0
@@ -3349,7 +3349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1828944857
 Rigidbody:
   m_ObjectHideFlags: 0
