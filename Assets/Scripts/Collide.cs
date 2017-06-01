@@ -13,6 +13,8 @@ public class Collide : MonoBehaviour {
     public Font GameOverFont;
     public string MainMenuScene;
 
+	private bool _isInvincible = false;
+
 	void OnCollisionEnter(Collision col) {
 		
 		// Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " col.gameObject.tag);
@@ -28,9 +30,10 @@ public class Collide : MonoBehaviour {
 			Destroy (col.gameObject);
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
+			_isInvincible = true;
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 			foreach (GameObject wall in walls) {
-				wall.GetComponent<Translate>().speed = 50;
+				wall.GetComponent<Translate>().speed = 30;
 			}
 			walls = GameObject.FindGameObjectsWithTag("Wall");
 			foreach (GameObject wall in walls) {
@@ -50,6 +53,8 @@ public class Collide : MonoBehaviour {
 
 	IEnumerator WaitAndRevert() {
 		yield return new WaitForSecondsRealtime (5.0f);
+
+		_isInvincible = false;
 
 		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 		foreach (GameObject wall in walls) {
@@ -103,5 +108,13 @@ public class Collide : MonoBehaviour {
             }
 
         }
+
+		GUIStyle labelStyle = new GUIStyle();
+		labelStyle.normal.textColor = Color.red;
+		labelStyle.fontSize = 30;
+		labelStyle.alignment = TextAnchor.MiddleCenter;
+		if (_isInvincible) {
+			GUI.Label(new Rect(Screen.width / 2 - 200, Screen.height - 50, 400, 50), "INVINCIBLE MODE !!!", labelStyle);
+		}
     }
 }

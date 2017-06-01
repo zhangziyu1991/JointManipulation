@@ -21,7 +21,7 @@ public class Translate : MonoBehaviour {
 		if (_wall.transform.position.z < sink.position.z) {
 			Destroy(_wall);
 			_wall = (GameObject) Instantiate(wall, source.position, Quaternion.identity);
-			if (speed == 50) {
+			if (speed == 30) {
 				foreach (Transform child in _wall.transform) {
 					if (child.tag == "Wall Component") {
 						child.tag = "Wall Component Invincible Mode";
