@@ -15,6 +15,8 @@ public class CountDown : MonoBehaviour {
     public Font TimeUpFont;
     public string MainMenuScene;
 
+    public bool cont;
+
     // Use this for initialization
     void Start () {
         timer = GameObject.Find("Timer").GetComponent<Text>();
@@ -25,7 +27,13 @@ public class CountDown : MonoBehaviour {
     // Update is called once per frame
 
     void Update () {
-        timeRemaining -= Time.deltaTime;
+        if(cont){
+            timeRemaining -= Time.deltaTime;
+        }
+        else{
+         timeRemaining = timeRemaining;
+        }
+        
 
         //Debug.Log(timeRemaining);
         if ((int)timeRemaining > 0)

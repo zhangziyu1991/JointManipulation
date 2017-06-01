@@ -34,6 +34,10 @@ public class Collide : MonoBehaviour {
 					translate.speed = 0;
 				}
 			}
+			//Time.timeScale = 0;
+			CountDown count = GameObject.Find("Timer").GetComponent<CountDown>();
+			count.cont = false;
+
 			//Debug.Log(col.gameObject.transform.parent.name);
 
 			gameOver = true;
