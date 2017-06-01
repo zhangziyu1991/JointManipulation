@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Collide : MonoBehaviour {
 
@@ -91,13 +92,13 @@ public class Collide : MonoBehaviour {
 
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 250, 70), "Restart"))
             {
-                Application.LoadLevel(1);
+				SceneManager.LoadScene(1);
             }
 
             //Make Main Menu button
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 40, 250, 70), "Main Menu"))
             {
-                Application.LoadLevel(0);
+				SceneManager.LoadScene(0);
             }
 
 

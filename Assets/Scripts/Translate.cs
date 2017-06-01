@@ -12,7 +12,8 @@ public class Translate : MonoBehaviour {
 	private GameObject _wall;
 
 	void Start() {
-		_wall = (GameObject) Instantiate(wall, wall.transform.position, Quaternion.identity);
+		string[] nameSplit = wall.name.Split (' ');
+		_wall = (GameObject) Instantiate(wall, new Vector3(0, 0, 15 * int.Parse(nameSplit[1])), Quaternion.identity);
 	}
     
 	void Update() {

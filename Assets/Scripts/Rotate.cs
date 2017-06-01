@@ -29,7 +29,7 @@ public class Rotate : MonoBehaviour {
 			transform.parent.localRotation = Quaternion.Euler (0, 0, midRotation - deltaRotation);
 		}
 
-		Debug.Log (vectorFrom + ", " + vectorTo + ", " + angle);
+//		Debug.Log (vectorFrom + ", " + vectorTo + ", " + angle);
 
 //		Vector3 fromVector = new Vector3(0, 0, midRotation)
 //		if (midRotation, )
@@ -47,17 +47,17 @@ public class Rotate : MonoBehaviour {
 //				}
 	}
 
-	float WrapAngle(float angle) {
-		angle %= 360;
-		if (angle > 180)
-			return angle - 360;
-		return angle;
-	}
-
-	float UnwrapAngle (float angle){
-		if(angle >=0)
-			return angle;
-		angle = -angle%360;
-		return 360-angle;
-	}
+//	float WrapAngle(float angle) {
+//		angle %= 360;
+//		if (angle > 180)
+//			return angle - 360;
+//		return angle;
+//	}
+//
+//	float UnwrapAngle (float angle){
+//		if(angle >=0)
+//			return angle;
+//		angle = -angle%360;
+//		return 360-angle;
+//	}
 }
