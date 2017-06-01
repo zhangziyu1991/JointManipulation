@@ -31,4 +31,17 @@ public class Translate : MonoBehaviour {
 			} 
 		}
 	}
+
+	// void OnCollisionEnter(Collision col) {
+		
+	// 	Debug.Log ("AAAA");
+
+	// 	if (col.gameObject.tag == "Wall Component") {
+	// 		//gameOver = true;
+	// 		//Debug.Break ();
+
+	// 		speed = 0;
+		
+	// 	} 
+	// }
 }

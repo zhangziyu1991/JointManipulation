@@ -16,13 +16,27 @@ public class Collide : MonoBehaviour {
 
 	private bool _isInvincible = false;
 
+	private string[] wall_names = new string[30]{"Wall 01","Wall 02", "Wall 03", "Wall 04", "Wall 05", "Wall 06", "Wall 07", "Wall 08", "Wall 09",
+	 "Wall 10", "Wall 11", "Wall 12", "Wall 13", "Wall 14", "Wall 15", "Wall 16", "Wall 17", "Wall 18", "Wall 19", "Wall 20", "Wall 21", "Wall 22",
+	 "Wall 23", "Wall 24", "Wall 25", "Wall 26", "Wall 27", "Wall 28", "Wall 29", "Wall 30"};
+
 	void OnCollisionEnter(Collision col) {
 		
 		// Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " col.gameObject.tag);
 
 		if (col.gameObject.tag == "Wall Component") {
+			string colliding_wall = col.gameObject.transform.parent.name;
+			for(int i = 0; i < 30; i++){
+				if(colliding_wall != wall_names[i]+"(Clone)" && GameObject.Find(wall_names[i])){
+					GameObject wall = GameObject.Find(wall_names[i]);
+					Translate translate = wall.GetComponent<Translate>();
+					Debug.Log(translate.speed);
+					translate.speed = 0;
+				}
+			}
+			//Debug.Log(col.gameObject.transform.parent.name);
+
 			gameOver = true;
-			//Debug.Break ();
 		
 		} else if (col.gameObject.tag == "Coin") {
 			string[] tokens = scoreText.text.Split ('：');
