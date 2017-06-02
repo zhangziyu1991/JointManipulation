@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -355,7 +355,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -379,7 +379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7c8b2695c20ab47952597fb2d8dfc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlaySceneName: MiniGame
+  Arcade: MiniGame
+  Classic: ClassicMode
+  HelpPage: HelpPage
   MainMenuFont: {fileID: 12800000, guid: ae308e7c13f37724c83ef3746c468c74, type: 3}
 --- !u!1 &852338261
 GameObject:

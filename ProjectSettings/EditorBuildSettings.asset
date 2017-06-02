@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGame.unity
     guid: 974210e2fc47248a3882e4a2318efb7d
+  - enabled: 1
+    path: Assets/Scenes/ClassicMode.unity
+    guid: a9ee031a891530840aad5aa36e7868e5
+  - enabled: 1
+    path: Assets/Scenes/HelpPage.unity
+    guid: 07c220c3cefb2cb40803503c3c9ea256

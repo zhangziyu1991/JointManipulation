@@ -1,5 +1,7 @@
 ﻿
-var PlaySceneName : String;
+var Arcade : String;
+var Classic : String;
+var HelpPage : String;
 var MainMenuFont : Font;
 
 
@@ -18,16 +20,16 @@ GUI.skin.button.fontSize = 40;
 
 
 		if(GUI.Button(Rect(Screen.width/2 - 250,Screen.height/2 ,500,80), "Classic Mode")){
-			Application.LoadLevel(PlaySceneName);
+			Application.LoadLevel(Classic);
 		}
 
 		//Make Main Menu button
 		if(GUI.Button(Rect(Screen.width/2 - 250,Screen.height/2 + 80,500,80), "Arcade Mode")){
-			Application.LoadLevel(PlaySceneName);
+			Application.LoadLevel(Arcade);
 		}
 		
-		if (GUI.Button (Rect (Screen.width/2 - 250,Screen.height/2 + 160,500,80), "Zen Mode")){
-			Application.LoadLevel(PlaySceneName);
+		if (GUI.Button (Rect (Screen.width/2 - 250,Screen.height/2 + 160,500,80), "Help")){
+			Application.LoadLevel(HelpPage);
 		}
 
 		//Make quit game button

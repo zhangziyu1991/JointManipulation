@@ -1,5 +1,6 @@
 
 var mainMenuSceneName : String;
+//var reloadScene: String;
 var pauseMenuFont : Font;
 private var pauseEnabled = false;	
 

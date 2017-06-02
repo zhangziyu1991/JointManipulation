@@ -13,6 +13,7 @@ public class Collide : MonoBehaviour {
 	private bool gameOver = false;
     public Font GameOverFont;
     public string MainMenuScene;
+    //public string ReloadScene;
 
 	private bool _isInvincible = false;
 
@@ -24,14 +25,14 @@ public class Collide : MonoBehaviour {
     AudioSource bgm;
     AudioSource collide;
 
-    void Start() {
-    	bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
-    	collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
-    }
+    void Start(){
+    	 bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+    	 collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
+    	}
 
 	void OnCollisionEnter(Collision col) {
 		
-//		Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " + col.gameObject.tag + ", " + col.gameObject.transform.parent.gameObject);
+		Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " + col.gameObject.tag + ", " + col.gameObject.transform.parent.gameObject);
 
 		if (col.gameObject.tag == "Wall Component") {
 			string colliding_wall = col.gameObject.transform.parent.name;
@@ -44,8 +45,11 @@ public class Collide : MonoBehaviour {
 				}
 			}
 			//Time.timeScale = 0;
-			CountDown count = GameObject.Find("Timer").GetComponent<CountDown>();
-			count.cont = false;
+			if(GameObject.Find("Timer")){
+				CountDown count = GameObject.Find("Timer").GetComponent<CountDown>();
+				count.cont = false;
+			}
+			
 
 			//Debug.Log(col.gameObject.transform.parent.name);
 
@@ -65,9 +69,6 @@ public class Collide : MonoBehaviour {
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
 			_isInvincible = true;
-
-			bgm.pitch = 2;
-
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 			foreach (GameObject wall in walls) {
 				wall.GetComponent<Translate>().speed = 30.5f;
@@ -92,8 +93,6 @@ public class Collide : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (5.0f);
 
 		_isInvincible = false;
-
-		bgm.pitch = 1;
 
 		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 		foreach (GameObject wall in walls) {
@@ -130,7 +129,9 @@ public class Collide : MonoBehaviour {
 
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 250, 70), "Restart"))
             {
-				SceneManager.LoadScene(1);
+            	Scene scene = SceneManager.GetActiveScene(); 
+            	SceneManager.LoadScene(scene.name);
+				//SceneManager.LoadScene(ReloadScene);
             }
 
             //Make Main Menu button
