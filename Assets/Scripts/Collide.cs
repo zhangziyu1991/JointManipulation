@@ -65,6 +65,9 @@ public class Collide : MonoBehaviour {
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
 			_isInvincible = true;
+
+			bgm.pitch = 2;
+
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 			foreach (GameObject wall in walls) {
 				wall.GetComponent<Translate>().speed = 30.5f;
@@ -89,6 +92,8 @@ public class Collide : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (5.0f);
 
 		_isInvincible = false;
+
+		bgm.pitch = 1;
 
 		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 		foreach (GameObject wall in walls) {
