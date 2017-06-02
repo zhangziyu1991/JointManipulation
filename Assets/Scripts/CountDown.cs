@@ -38,7 +38,13 @@ public class CountDown : MonoBehaviour {
         //Debug.Log(timeRemaining);
         if ((int)timeRemaining > 0)
         {
-            timer.text = "TIMER: " + (int)timeRemaining + " S";
+            int min = (int)(timeRemaining / 60);
+            if(min != 0){
+                timer.text = "TIMER: " + min + "min " + (int)timeRemaining % 60 + " S";
+            }
+            else{
+                timer.text = "TIMER: " + (int)timeRemaining + " S";
+            }
         }
         else {
             timer.text = "TIME'S UP!";
