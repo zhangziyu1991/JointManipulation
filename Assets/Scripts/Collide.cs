@@ -24,14 +24,14 @@ public class Collide : MonoBehaviour {
     AudioSource bgm;
     AudioSource collide;
 
-    void Start(){
-    	 bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
-    	 collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
-    	}
+    void Start() {
+    	bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+    	collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
+    }
 
 	void OnCollisionEnter(Collision col) {
 		
-		Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " + col.gameObject.tag + ", " + col.gameObject.transform.parent.gameObject);
+//		Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " + col.gameObject.tag + ", " + col.gameObject.transform.parent.gameObject);
 
 		if (col.gameObject.tag == "Wall Component") {
 			string colliding_wall = col.gameObject.transform.parent.name;
