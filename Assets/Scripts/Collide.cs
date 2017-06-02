@@ -26,9 +26,9 @@ public class Collide : MonoBehaviour {
     AudioSource collide;
 
     void Start(){
-    	 bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
-    	 collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
-    	}
+    	bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+    	collide =GameObject.Find("Auxillary Camera").GetComponent<AudioSource>();    
+    }
 
 	void OnCollisionEnter(Collision col) {
 		
@@ -68,7 +68,11 @@ public class Collide : MonoBehaviour {
 			Destroy (col.gameObject);
 		
 		} else if (col.gameObject.tag == "Golden Coin") {
+			
 			_isInvincible = true;
+
+			bgm.pitch = 2;
+
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 			foreach (GameObject wall in walls) {
 				wall.GetComponent<Translate>().speed = 30.5f;
@@ -93,6 +97,8 @@ public class Collide : MonoBehaviour {
 		yield return new WaitForSecondsRealtime (5.0f);
 
 		_isInvincible = false;
+
+		bgm.pitch = 1;
 
 		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 		foreach (GameObject wall in walls) {
@@ -124,10 +130,10 @@ public class Collide : MonoBehaviour {
 
 
         if (gameOver) {
-            GUI.Box(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 250, 280), "Game Over");
+            GUI.Box(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 140, 300, 280), "Game Over");
 
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 250, 70), "Restart"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 70, 300, 70), "Restart"))
             {
             	Scene scene = SceneManager.GetActiveScene(); 
             	SceneManager.LoadScene(scene.name);
@@ -135,14 +141,14 @@ public class Collide : MonoBehaviour {
             }
 
             //Make Main Menu button
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 40, 250, 70), "Main Menu"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2, 300, 70), "Main Menu"))
             {
 				SceneManager.LoadScene(0);
             }
 
 
             //Make quit game button
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 110, 250, 70), "Quit Game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 70, 300, 70), "Quit Game"))
             {
                 Application.Quit();
             }
