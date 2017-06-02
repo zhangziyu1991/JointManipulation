@@ -16,11 +16,15 @@ public class CountDown : MonoBehaviour {
     public string MainMenuScene;
 
     public bool cont;
+    AudioSource bgm;
+    AudioSource stop;
 
     // Use this for initialization
     void Start () {
         timer = GameObject.Find("Timer").GetComponent<Text>();
         timer.text = "TIMER: " + timeRemaining.ToString() + " S";
+        bgm = GameObject.Find("Main Camera").GetComponent<AudioSource>();
+        stop =GameObject.Find("Directional Light").GetComponent<AudioSource>();    
 		
 	}
 
@@ -50,6 +54,11 @@ public class CountDown : MonoBehaviour {
             timer.text = "TIME'S UP!";
             //Debug.Break();
             time_up = true;
+            if(bgm.isPlaying){
+                bgm.Stop();
+                stop.Play();
+
+            }
 
         }
 		
