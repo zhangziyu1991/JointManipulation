@@ -47,6 +47,10 @@ public class CountDown : MonoBehaviour {
                 timer.text = "TIMER: " + min + "min " + (int)timeRemaining % 60 + " S";
             }
             else{
+                if(timeRemaining <= 10){
+                    timer.color = Color.red;
+                    timer.fontSize = 40;
+                }
                 timer.text = "TIMER: " + (int)timeRemaining + " S";
             }
         }
