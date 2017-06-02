@@ -85,6 +85,9 @@ GUI.skin.button.fontSize = 30;
 
 		//Make Main Menu button
 		if(GUI.Button(Rect(Screen.width /2 - 120,Screen.height /2 + 40,250,70), "Main Menu")){
+			Time.timeScale = 1;
+			AudioListener.volume = 1;
+			Cursor.visible = true;
 			Application.LoadLevel(mainMenuSceneName);
 		}
 		
