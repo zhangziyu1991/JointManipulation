@@ -60,8 +60,11 @@ public class CountDown : MonoBehaviour {
 
             }
 
+			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
+			foreach (GameObject wall in walls) {
+				wall.GetComponent<Translate>().speed = 0;
+			}
         }
-		
 	}
 
     void OnGUI() {

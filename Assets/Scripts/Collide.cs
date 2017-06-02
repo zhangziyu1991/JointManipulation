@@ -31,7 +31,7 @@ public class Collide : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		
-		// Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " col.gameObject.tag);
+		Debug.Log ("I'm colliding in to " + col.gameObject + " of tag " + col.gameObject.tag + ", " + col.gameObject.transform.parent.gameObject);
 
 		if (col.gameObject.tag == "Wall Component") {
 			string colliding_wall = col.gameObject.transform.parent.name;
@@ -39,7 +39,7 @@ public class Collide : MonoBehaviour {
 				if(colliding_wall != wall_names[i]+"(Clone)" && GameObject.Find(wall_names[i])){
 					GameObject wall = GameObject.Find(wall_names[i]);
 					Translate translate = wall.GetComponent<Translate>();
-					Debug.Log(translate.speed);
+//					Debug.Log(translate.speed);
 					translate.speed = 0;
 				}
 			}
@@ -67,7 +67,7 @@ public class Collide : MonoBehaviour {
 			_isInvincible = true;
 			GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 			foreach (GameObject wall in walls) {
-				wall.GetComponent<Translate>().speed = 30;
+				wall.GetComponent<Translate>().speed = 30.5f;
 			}
 			walls = GameObject.FindGameObjectsWithTag("Wall");
 			foreach (GameObject wall in walls) {
@@ -92,7 +92,7 @@ public class Collide : MonoBehaviour {
 
 		GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall Wrapper");
 		foreach (GameObject wall in walls) {
-			wall.GetComponent<Translate>().speed = 3;
+			wall.GetComponent<Translate>().speed = 1.5f;
 		}
 
 		walls = GameObject.FindGameObjectsWithTag("Wall");
@@ -145,10 +145,10 @@ public class Collide : MonoBehaviour {
 
 		GUIStyle labelStyle = new GUIStyle();
 		labelStyle.normal.textColor = Color.red;
-		labelStyle.fontSize = 30;
+		labelStyle.fontSize = 50;
 		labelStyle.alignment = TextAnchor.MiddleCenter;
 		if (_isInvincible) {
-			GUI.Label(new Rect(Screen.width / 2 - 200, Screen.height - 50, 400, 50), "INVINCIBLE MODE !!!", labelStyle);
+			GUI.Label(new Rect(Screen.width / 2 - 200, Screen.height - 200, 400, 200), "INVINCIBLE MODE !!!", labelStyle);
 		}
     }
 }
